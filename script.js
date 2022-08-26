@@ -278,7 +278,7 @@ function playNote(code, shiftKey = false) {
   } else {
     src = "a" + code + ".mp3";
   }
-  note = new Audio("./note/" + src);
+  note = new Audio("/note/" + src);
   note.play();
 }
 
