@@ -202,7 +202,7 @@ $$ = document.querySelectorAll.bind(document);
 async function setNote() {
   container = $(".container");
   tones = "";
-  return "Hello";
+  return tones;
 }
 setNote()
   .then((success, error) => {
@@ -278,7 +278,7 @@ function playNote(code, shiftKey = false) {
   } else {
     src = "a" + code + ".mp3";
   }
-  note = new Audio("./piano/note/" + src);
+  note = new Audio("../piano/note/" + src);
   note.play();
 }
 
