@@ -278,7 +278,7 @@ function playNote(code, shiftKey = false) {
   } else {
     src = "a" + code + ".mp3";
   }
-  note = new Audio("../note/" + src);
+  note = new Audio("./note/" + src);
   note.play();
 }
 
@@ -296,26 +296,26 @@ document.onkeydown = (e) => {
     console.clear();
   }
 };
-// document.addEventListener(
-//   "contextmenu",
-//   function (e) {
-//     e.preventDefault();
-//   },
-//   false
-// );
-// (function () {
-//   (function () {
-//     try {
-//       (function b(i) {
-//         if (("" + i / i).length !== 1 || i % 20 === 0) {
-//           (function () {}.constructor("debugger")());
-//         } else {
-//           debugger;
-//         }
-//         b(++i);
-//       })(0);
-//     } catch (e) {
-//       setTimeout(a, 5000);
-//     }
-//   })();
-// })();
+document.addEventListener(
+  "contextmenu",
+  function (e) {
+    e.preventDefault();
+  },
+  false
+);
+(function () {
+  (function () {
+    try {
+      (function b(i) {
+        if (("" + i / i).length !== 1 || i % 20 === 0) {
+          (function () {}.constructor("debugger")());
+        } else {
+          debugger;
+        }
+        b(++i);
+      })(0);
+    } catch (e) {
+      setTimeout(a, 5000);
+    }
+  })();
+})();
